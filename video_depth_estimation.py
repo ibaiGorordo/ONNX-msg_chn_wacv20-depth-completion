@@ -16,7 +16,7 @@ if __name__ == '__main__':
     cap_depth = cv2.VideoCapture("outdoor_example/depthmap/depth_frame%03d.png", cv2.CAP_IMAGES)
     cap_rgb = cv2.VideoCapture("outdoor_example/left_video.avi")
 
-    out_video = cv2.VideoWriter("out.avi", cv2.VideoWriter_fourcc('M','J','P','G'), 10, (640*2,480*2))
+    # out_video = cv2.VideoWriter("out.avi", cv2.VideoWriter_fourcc('M','J','P','G'), 10, (640*2,480*2))
 
     while cap_rgb.isOpened() and cap_depth.isOpened():
 
@@ -46,11 +46,11 @@ if __name__ == '__main__':
         cv2.putText(combined_img,f'Density:{depth_density:.1f}%',(combined_img.shape[1]-300,50), 
                     cv2.FONT_HERSHEY_SIMPLEX, 1.5, (255, 255, 255), 2, cv2.LINE_AA)
 
-        out_video.write(combined_img)
+        # out_video.write(combined_img)
        
         cv2.namedWindow("Estimated depth", cv2.WINDOW_NORMAL)
         cv2.imshow("Estimated depth", combined_img)
         cv2.waitKey(1)
 
 
-    out_video.release()
+    # out_video.release()
