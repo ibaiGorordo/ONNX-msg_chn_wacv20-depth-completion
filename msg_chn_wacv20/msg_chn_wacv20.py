@@ -96,7 +96,7 @@ if __name__ == '__main__':
     depth_density_rate = 0.2
     max_depth = 10
 
-    model_path='models/saved_model_480x640/msg_chn_wacv20_480x640.onnx'
+    model_path='../models/saved_model_480x640/msg_chn_wacv20_480x640.onnx'
     depth_estimator = Msg_chn_wacv20(model_path)
 
     cap_depth = cv2.VideoCapture("outdoor_example/depthmap/depth_frame%03d.png", cv2.CAP_IMAGES)
