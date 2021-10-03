@@ -99,8 +99,8 @@ if __name__ == '__main__':
     model_path='../models/saved_model_480x640/msg_chn_wacv20_480x640.onnx'
     depth_estimator = Msg_chn_wacv20(model_path)
 
-    cap_depth = cv2.VideoCapture("outdoor_example/depthmap/depth_frame%03d.png", cv2.CAP_IMAGES)
-    cap_rgb = cv2.VideoCapture("outdoor_example/left_video.avi")
+    cap_depth = cv2.VideoCapture("../outdoor_example/depthmap/depth_frame%03d.png", cv2.CAP_IMAGES)
+    cap_rgb = cv2.VideoCapture("../outdoor_example/left_video.avi")
 
     while cap_rgb.isOpened() and cap_depth.isOpened():
 
