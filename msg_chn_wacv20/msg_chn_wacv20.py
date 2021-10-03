@@ -91,6 +91,8 @@ class Msg_chn_wacv20():
         self.output_width = self.output_shape[3]
 
 if __name__ == '__main__':
+    
+    from utils import make_depth_sparse, draw_depth, update_depth_density
 
     depth_density = 10
     depth_density_rate = 0.2
