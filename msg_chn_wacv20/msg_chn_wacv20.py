@@ -4,7 +4,6 @@ import time
 import numpy as np
 import onnx
 import onnxruntime
-from scipy.special import softmax
 
 class Msg_chn_wacv20():
 
